@@ -11,5 +11,7 @@
 <%="profesional: "+request.getParameter("colaborador") %><br>
 <%="Empresa: "+request.getParameter("empresa") %><br>
 <%="fecha de visita: "+request.getParameter("fvisita") %><br>
+
+
 </body>
 </html>

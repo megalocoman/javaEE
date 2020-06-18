@@ -1,4 +1,4 @@
-package empresaseguridad.servelt;
+package empresaseguridad.login.servlet;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -7,32 +7,26 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class empresaServlet
+ * Servlet implementation class LoginServlet
  */
-public class empresaServlet extends HttpServlet {
+public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public empresaServlet() {
+    public LoginServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//	 */
+//	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 //		// TODO Auto-generated method stub
-////		response.getWriter().append("Served at: ").append(request.getContextPath());
-//		
-		String entrada = request.getParameter("ingresar");
-		
-		
-		getServletContext().getRequestDispatcher("/infologin.jsp").forward(request, response);
-//			
-	}
+//		response.getWriter().append("Served at: ").append(request.getContextPath());
+//	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
@@ -40,15 +34,14 @@ public class empresaServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 //		doGet(request, response);
+		String User = request.getParameter("user");
+		String passw = request.getParameter("passw");
 		
-		String entrada1 = request.getParameter("ingresarvisita");
 		getServletContext().getRequestDispatcher("/infoGestion.jsp").forward(request, response);
 		
-//		
-//		String param =request.getParameter("param");
-//		System.out.println("Parámetros a través de POST");
-//		getServletContext().getRequestDispatcher("/infologin.jsp").forward(request, response);
+		
+		
 		
 	}
-	
+
 }

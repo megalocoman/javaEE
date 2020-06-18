@@ -14,5 +14,20 @@
 			 <input type="submit" name="ingresar" id="ingresar" value="ingresar visita">
 
 	</form>
+	
+	<h1>ingreso informe visita</h1>
+	
+	<form action="empresaServlet" method="post" >
+	<label>nombre profesional:</label> <input type="text" name="colaborador" id="colaborador"> <br>
+			 <label>nombre empresa:</label> <input type="text" name="empresa" id="empresa"><br>
+			 <label>fecha visita:</label><input type="date"	name="fvisita" id="fvisita"><br>
+		<label>detalle visita</label>  <input type="text"	name="detvisita" id="detvisita"><br>
+		<label>medidas de visita</label> <input type="text"	name="medvisita" id="medvisita"><br>
+		<label>cobro extra</label><br>
+		<label>si </label><input type="radio" id="si" name="cobroextra" value="true"><br>
+		<label>no </label><input type="radio" id="no" name="cobroextra" value="false"><br>
+		<input type="submit" name="ingresarvisita" id="ingresarvisita" value="ingresar informe de visita">		
+			 
+	</form>
 </body>
 </html>
